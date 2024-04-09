@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url('240.jpg'); /* Replace 'background.jpg' with the path to your image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 600px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5); /* Adjust alpha value for transparency */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    margin-top: 0;
+}
+
+#color-display {
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    border: 5px solid #fff;
+    border-radius: 10px;
+    transition: background-color 0.5s ease;
+}
+
+.option {
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.option:hover {
+    transform: scale(1.1);
+}
+
+#message {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#lives {
+    margin-top: 10px;
+}
+
+#restart-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#restart-btn:hover {
+    background-color: #45a049;
+}
