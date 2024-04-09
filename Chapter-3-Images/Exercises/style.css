@@ -1,0 +1,16 @@
+body {
+    background-color: #333;
+    color: aliceblue;
+    text-align: center;
+    font-size: 18px;
+}
+h1 {
+    font-family: Arial, sans-serif;
+    color: #ffcc00;
+    font-size: 36px;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+img {
+    margin: 20px; /* Add margin around each image */
+}

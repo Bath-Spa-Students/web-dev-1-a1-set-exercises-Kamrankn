@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Set minimum height to the viewport height */
+}
+
+header {
+    background-color: #17072b;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center; /* Center text */
+}
+
+header h1 {
+    font-family: Tahoma, sans-serif;
+    font-size: 36px; /* Increase font size */
+    margin-top: 10px; /* Add spacing between heading and nav */
+    margin-bottom: 20px; /* Add spacing between heading and nav */
+    font-weight: bold; /* Make the text bold */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 25px; /* Increase font size */
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    flex: 1; /* Expand main to fill remaining space */
+    padding: 20px;
+}
+
+#welcome {
+    flex: 1;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+#welcome h2 {
+    font-family: Tahoma, sans-serif;
+    font-weight: 700;
+    color: #17072b;
+    margin-bottom: 10px;
+}
+
+#lineup-container {
+    background-color: #172d67;
+    color: #ffffff;
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+#lineup-content {
+    margin-bottom: 20px;
+}
+
+#lineup-content h2 {
+    font-family: Tahoma, sans-serif;
+    font-weight: 700;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-container img {
+    width: 48%;
+}
+
+footer {
+    background-color: #8c15e9;
+    color: #ffffff;
+    padding: 0px;
+    text-align: center;
+}
+
+#lineup-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#lineup-content li {
+    margin-bottom: 28px; /* Adjust spacing as needed */
+}
+
+header h1,  h2 {
+    border-bottom: 3px solid #ffffff;
+    display: inline-block;
+}
+
+#welcome h2 {
+    border-bottom: 3px solid #000000;
+}
+

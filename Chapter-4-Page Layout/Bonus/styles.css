@@ -1,0 +1,192 @@
+/* Main heading styles */
+.main-heading {
+    background-color: #ffa600a3;
+    text-align: center;
+    padding: 20px 0;
+    color: #333;
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define the keyframes */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    25% { background-position: 25% 50%; }
+    50% { background-position: 50% 50%; }
+    75% { background-position: 75% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+/* Global styling */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #f6c90e, #fb7944, #7c72fc, #14a1cb, #ffef96); /* Initial gradient without animation */
+    color: #333;
+    line-height: 1.6;
+    animation: gradientAnimation 15s linear infinite; /* Apply the animation */
+}
+
+/* Navigation styling */
+nav {
+    background-color:  #FFA500;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center; /* Center aligning the content */
+    margin-top: -20px; /* Move the navigation bar down */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em; /* Increase text size */
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+nav ul li i {
+    font-size: 1.5em; /* Adjust size as needed */
+    margin-right: 5px; /* Add some spacing between icon and text */
+}
+
+/* Main content styling */
+main {
+    padding: 40px 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Align items with space between them */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.container .column {
+    flex: 1 1 calc(50% - 20px);
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px; /* Add border radius */
+    border: 2px solid #14a1cb;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Add spacing between sections */
+}
+
+.container .column:last-child {
+    margin-left: 40px; /* Add spacing between the last column and the previous one */
+}
+
+.column h2 {
+    margin-bottom: 20px;
+    color: #b30000;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Button styling */
+button {
+    background-color: #b30000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #090909;
+}
+
+/* Progress bar styling */
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.progress {
+    height: 100%;
+    border-radius: 10px;
+    background-color: #007bff;
+}
+
+/* Visual enhancements */
+.module-icon, .assignment-icon {
+    width: 50px; 
+    height: 50px; 
+    background-color: #007bff; 
+    border-radius: 50%; /* Make it circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.module-icon i, .assignment-icon i {
+    color: white; /* Icon color */
+    font-size: 24px; 
+}
+
+.assignment-icon {
+    width: 30px; 
+    height: 30px; 
+    background-color: #0056b3; 
+    border-radius: 50%; /* Make it circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.assignment-icon i {
+    color: white; /* Icon color */
+    font-size: 18px; 
+}
+
+/* Remove bullet points from lists */
+.column ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.column h2 i {
+    margin-right: 10px; /* Add some spacing between the clock icon and the heading text */
+}
