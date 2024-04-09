@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soundboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Soundboard</h1>
+  <div id="soundboard">
+    <button class="audio-button" onclick="playAudio('a.mp3')">Play 1</button>
+    <button class="audio-button" onclick="playAudio('b.mp3')">Play 2</button>
+    <button class="audio-button" onclick="playAudio('ba.mp3')">Play 3</button>
+    <button class="audio-button" onclick="playAudio('da.mp3')">Play 4</button>
+    <button class="audio-button" onclick="playAudio('e.mp3')">Play 5</button>
+    <button class="audio-button" onclick="playAudio('h.mp3')">Play 6</button>
+    <button class="audio-button" onclick="playAudio('i.mp3')">Play 7</button>
+    <button class="audio-button" onclick="playAudio('im.mp3')">Play 8</button>
+  </div>
+  <div id="search-container">
+    <input type="text" id="search-input" placeholder="Search audio...">
+    <button id="search-button" onclick="searchAudio()">Search</button>
+  </div>
+  <div id="volume-container">
+    <input type="range" id="volume-slider" min="0" max="100" value="50" oninput="updateVolume()">
+    <span id="volume-label">Volume: 50%</span>
+  </div>
+<script src="index.js"></script>
+</body>
+</html>

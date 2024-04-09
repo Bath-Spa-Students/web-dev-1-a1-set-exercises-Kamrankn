@@ -1,0 +1,89 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: linear-gradient(135deg, #283048, #859398);
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#soundboard {
+  background-color: rgba(255, 255, 255, 0.3); 
+  border: 2px solid #1a1a1a;     /* Border styling */
+  border-radius: 20px;     /* Rounded corners */
+  padding: 20px; 
+  display: grid;     /* Using CSS grid for layout */
+  grid-template-columns: repeat(4, 1fr);     /* Creating 4 equal-width columns */
+  gap: 20px;     /* Gap between grid items */
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); 
+  z-index: 1;     /* Ensuring this element appears above others */
+}
+
+/* Audio button styles */
+.audio-button {
+  background-color: #654ebf; /* Background color for buttons */
+  color: white; 
+  border: none; /* Removing border */
+  padding: 15px 30px; /* Padding inside the button */
+  text-align: center; 
+  text-decoration: none; /* Removing default underline */
+  display: inline-block; 
+  font-size: 20px; 
+  font-weight: bold; 
+  border-radius: 30px; 
+  cursor: pointer; /* Cursor style */
+  transition: background-color 0.3s; 
+}
+
+.audio-button:hover {
+  background-color: #45a049;
+}
+
+#search-container {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+#search-input {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-right: 10px;
+}
+
+#search-button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#search-button:hover {
+  background-color: #0056b3;
+}
+
+#volume-container {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+#volume-slider {
+  width: 200px;
+  margin-right: 10px;
+}
+
+h1 {
+  font-size: 40px; /* Adjust the font size as needed */
+}
